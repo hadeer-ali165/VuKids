@@ -1,0 +1,84 @@
+.joinContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formSection {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.formSection h2 {
+  color: #344fa1;
+  margin-bottom: 20px;
+}
+
+.formSection input,
+.formSection select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+}
+
+.joinBtn {
+  background: transparent;
+  color: #a833f7;
+  border: 1px solid #a833f7;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.joinBtn:hover {
+  background: #a833f7;
+  color: white;
+}
+
+.infoSection {
+  flex: 1;
+  min-width: 250px;
+}
+
+.infoBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.icon {
+  font-size: 20px;
+  color: #344fa1;
+  margin-top: 4px;
+  padding-left: 30px;
+}
+@media (max-width: 768px) {
+  .joinContainer {
+    flex-direction: column;
+  }
+
+  .infoSection {
+    padding-top: 10px;
+  }
+}

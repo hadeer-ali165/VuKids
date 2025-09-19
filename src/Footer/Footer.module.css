@@ -1,0 +1,71 @@
+.footer {
+  background-color: #4255a4;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 3.5rem;
+  gap: 30px;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.logo img {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.logo h4 {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.box {
+  min-width: 160px;
+}
+
+.box h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.box p {
+  padding: 6px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.box p:hover {
+  color: #00c4ff;
+}
+
+/* 📱 ريسبونسيف */
+@media (max-width: 992px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  .box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 1.5rem;
+  }
+
+  .box {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

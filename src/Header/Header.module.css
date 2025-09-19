@@ -1,0 +1,120 @@
+.parent {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+/* عنصر الخلفية */
+.bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/h1_hero.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* قلب الصورة فقط */
+.flipped {
+  transform: scaleX(-1);
+}
+
+.rtl button {
+  margin-top: 25px;
+}
+
+.ltr button {
+  margin-top: 40px;
+}
+
+.head {
+  position: relative;
+}
+
+.sub {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: -100px auto 0 auto; 
+  z-index: 2;
+}
+
+/* المحتوى فوق الصورة */
+.header {
+  position: relative;
+  z-index: 1;
+  padding: 0 3.5rem;
+  color: #fff;
+  margin-top: 100px;
+  width: 600px;
+}
+
+.header h1 {
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+
+.header p {
+  font-size: 16px;
+}
+
+.header button {
+  display: flex;
+  border: none;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background-color: #ff9f67;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 840px) {
+  .header {
+    width: 600px;
+    overflow: auto;
+    margin-top: 56px;
+    padding-bottom: 40px;
+  }
+
+  .ltr {
+    margin-bottom: 100px;
+  }
+
+  .rtl {
+    margin-bottom: 100px;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .header p {
+    font-size: 20px;
+  }
+
+  .header button {
+    margin-top: 20px;
+    margin-bottom: 60px !important;
+  }
+
+  .header {
+    padding: 0 3.5rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .header {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header p {
+    width: 100%;
+  }
+}

@@ -1,0 +1,154 @@
+.courses {
+  width: 100%;
+  padding: 2rem;
+}
+
+.courses h2 {
+  text-align: center;
+  color: #4255A4;
+  margin-bottom: 2rem;
+}
+
+.boxs {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.imgs img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textBox {
+  padding: 20px 30px;
+}
+
+.textBox h3 {
+  color: #4255A4;
+  margin: 10px 0;
+}
+
+.textBox p {
+  color: rgb(49, 24, 115);
+  padding-bottom: 10px;
+}
+
+.rateBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: relative;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.priceBox h4 {
+  color: #4255A4;
+}
+
+.priceBox p {
+  text-decoration: line-through;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.sale {
+  background-color: red;
+  padding: 3px 5px;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+}
+
+.sessionBtn {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  background-color: #0a53be;
+  border: none;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.sessionBtn:hover {
+  background-color: #084298;
+}
+
+/* ✅ الريسبونسيف */
+@media (max-width: 768px) {
+  .courses {
+    padding: 1rem;
+  }
+
+  .textBox {
+    padding: 15px;
+  }
+
+  .sessionBtn {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+}
+
+/* ✅ سلايدر رابر */
+.sliderWrapper {
+  position: relative;
+  padding: 0 40px;
+}
+
+/* شكل الأسهم */
+.swiperPrev,
+.swiperNext {
+  color: #0a53be !important;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f1f5ff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  position: absolute;
+}
+
+/* حجم الأيقونات */
+.swiperPrev::after,
+.swiperNext::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/* أماكن الأسهم */
+.swiperPrev {
+  left: 0;
+}
+
+.swiperNext {
+  right: 0;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .swiperPrev,
+  .swiperNext {
+    width: 28px;
+    height: 28px;
+  }
+
+  .swiperPrev::after,
+  .swiperNext::after {
+    font-size: 16px !important;
+  }
+}
