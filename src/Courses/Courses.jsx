@@ -21,7 +21,7 @@ const Courses = () => {
       <div className={course.courses}>
         <h2>{t('Our Courses')}</h2>
 
-        {/* ✅ لفينا السلايدر جوه ديف خاص بيه */}
+      
         <div className={course.sliderWrapper}>
           <Swiper
             key={i18n.language}
@@ -88,7 +88,7 @@ const Courses = () => {
             ))}
           </Swiper>
 
-          {/* ✅ أسهم داخل الرابر */}
+       
           <div className={`${course.swiperPrev}`}></div>
           <div className={`${course.swiperNext}`}></div>
         </div>

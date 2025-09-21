@@ -89,7 +89,7 @@
 /* Responsive styles */
 @media (max-width: 950px) {
   .flex {
-    padding: 0 1.5rem; /* 🟢 تقليل المسافة عشان الموبايل */
+    padding: 0 1.5rem; 
   }
 
   .menuToggle {
@@ -120,7 +120,7 @@
   .lists ul {
     flex-direction: column;
     width: 100%;
-    gap: 12px; /* 🟢 مسافة بسيطة بين العناصر */
+    gap: 12px; 
   }
 
   .lists ul li,
@@ -128,7 +128,7 @@
   .lists ul a {
     margin: 0;
     width: 100%;
-    text-align: center; /* 🟢 توسيط العناصر */
+    text-align: center; 
     padding: 12px 0;
   }
 

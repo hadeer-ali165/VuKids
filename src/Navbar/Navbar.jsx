@@ -12,7 +12,7 @@ const Navbar = () => {
   const { t } = useTranslation();
   const list = Nav(t);
 
-  // 👇 خليه يبدأ حسب اللغة الحالية
+ 
   const [lang, setLang] = useState(i18n.language === "ar" ? "EN" : "AR");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);

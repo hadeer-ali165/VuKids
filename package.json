@@ -1,9 +1,12 @@
 {
+  "homepage": "https://hadeer-ali165.github.io/VuKids",
   "name": "vukids2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -15,6 +18,8 @@
     "@fortawesome/free-regular-svg-icons": "^7.0.1",
     "@fortawesome/free-solid-svg-icons": "^7.0.1",
     "@fortawesome/react-fontawesome": "^3.0.2",
+    "debug": "^4.4.3",
+    "gh-pages": "^6.3.0",
     "i18next": "^25.5.2",
     "i18next-browser-languagedetector": "^8.2.0",
     "i18next-http-backend": "^3.0.2",

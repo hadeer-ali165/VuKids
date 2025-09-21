@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import { useTranslation } from "react-i18next";
 import i18n from '../i18n';
 import Teams from '../Data/Teams'
-import teamstyle from './team.module.css'
+import teamstyle from './Team.module.css'
 const Team = () => {
     const { t } = useTranslation();
     const teams = Teams()
@@ -16,7 +16,7 @@ const Team = () => {
         <h2 style={{textAlign:"center",fontSize:"38px" , color:"#4255A4"}}>{t('titleTeam')}</h2>
         <div className="slider" style={{ width: '100%', padding: '2rem 0' }}>
             <Swiper
-              key={i18n.language} // 👈 ده بيخلي Swiper يعيد تحميل نفسه لما اللغة تتغير
+              key={i18n.language} 
               spaceBetween={30}
               slidesPerView={1}
               loop={true}
